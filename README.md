@@ -31,7 +31,7 @@ Rather than relying on the Coros platform itself, this pipeline ingests raw seco
 
 ## 📈 Zone 2 Progression Chart
 
-![Zone 2 Progression](Marathon data line chart.png)
+![Zone 2 Progression](./Marathon data line chart.png)
 
 ---
 
