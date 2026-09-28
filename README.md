@@ -4,12 +4,12 @@ A Python-based data extraction, parsing, and analytical pipeline built to evalua
 
 ---
 
-## 📌 Project Overview
+## Project Overview
 Rather than relying on the Coros platform itself, this pipeline ingests raw second-by-second `.fit` binary files exported from my COROS watch. By converting raw metrics into running pace and isolating heart rate strictly within Zone 2 bounds (135–145 bpm), the analysis demonstrates clear and measurable aerobic efficiency gains over time.
 
 ---
 
-## 🛠️ Data Pipeline Architecture
+## Data Pipeline Architecture
 1. **Raw Ingestion:** Extracted 60+ `.fit` binary activity files from a compressed ZIP archive.
 2. **Parsing & ETL:** Utilized `fitparse` and `pandas` to translate binary streams into structured time-series DataFrames.
 3. **Data Cleaning & Transformation:** 
@@ -21,7 +21,7 @@ Rather than relying on the Coros platform itself, this pipeline ingests raw seco
 
 ---
 
-## 📊 Key Analytical Findings
+## Key Analytical Findings
 - **Baseline (April 2026):** Average Zone 2 Pace sat at **7:54 /km** across 4,158 logged seconds.
 - **Mid-Block Drift (July–August 2026):** Average Zone 2 Pace spiked to **8:54 – 9:05 /km**, reflecting environmental cardiac drift (summer conditions) and higher overall volume. A few of these mid-block runs were done in Italy and Turkey, involving some quite hefty hills. Gradient, temperature, hydration and acclimitisation, therefore, are all factors I suspect affected this mid-block spike in pace.   
 - **Adaptation Breakthrough (September 2026):** Average Zone 2 Pace dropped to **7:05 /km** across 9,845 logged seconds.
@@ -29,13 +29,13 @@ Rather than relying on the Coros platform itself, this pipeline ingests raw seco
 
 ---
 
-## 📈 Zone 2 Progression Chart
+## Zone 2 Progression Chart
 
-![Zone 2 Progression](./Marathon data line chart.png)
+![Zone 2 Progression](Marathon_data_line_chart.png)
 
 ---
 
-## 💻 Tech Stack & Tools
+## Tech Stack & Tools
 - **Language:** Python 3.x
 - **Environment:** Google Colab
 - **Data Engineering:** `pandas`, `numpy`, `fitparse`, `zipfile`, `glob`, `os`
